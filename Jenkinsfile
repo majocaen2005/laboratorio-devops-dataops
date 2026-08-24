@@ -1,5 +1,10 @@
 pipeline {
     agent any
+
+    environment {
+        PATH = "C:\\Users\\majoc\\AppData\\Local\\Programs\\Python\\Python314\\;C:\\Users\\majoc\\AppData\\Local\\Programs\\Python\\Python314\\Scripts\\;${env.PATH}"
+    }
+    
     stages {
         stage('Validar Python') {
             steps {
